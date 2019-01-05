@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+ string name;
+ int a;
+ cout<<"\n";
+ cout<<"choose language"<<endl;
+ cout<<"variants: "<<endl; english, deutsche, русский, українська"<<endl;
+ cout<<"for english enter 1"<<endl;
+ cout<<"für deutsche eingeben 2"<<endl;
+ cout<<"для русского ведите 3"<<endl;
+ cout<<"для української введіть 4"<<endl;
+ cin>>a;
+ if (a==1) {
+  cout<<"hello! my name is Mary and i`m your peronal assistant! what is your name?"<<endl;
+  cin>>name;
+  cout<<"hello, "<<name<<"! how are you?"<<endl;
+ } else if (a==2) {
+  cout<<"hallo! mein name ist Herta und ich bin ihre persönliche assistentin! wie ist dein name?"<<endl;
+  cin>>name;
+  cout<<"hallo, "<<name<<"! wie geht es dir?"<<endl;
+} else if (a==3) {
+  cout<<"привет! меня зовут Василиса и я твой персональный помощьник! как тебя зовут?"<<endl;
+  cin>>name;
+  cout<<"привет, "<<name<<"! как ты?"<<endl;
+ } (a==4) {
+  cout<<"привіт! мене звати Галина і я ваш персональний помічник! як вас звати?"<<endl;
+  cin>>name;
+  cout<<"привіт, "<<name<<"! як ваші справи?"<<endl;
+ } else if (a!==1 || a!==2 || a!==3 || a!==4){
+  cout<<"enter 1, 2, 3 or 4"<<endl;
+ }
+  
+  cin.get();
+  return 0;
+ }
